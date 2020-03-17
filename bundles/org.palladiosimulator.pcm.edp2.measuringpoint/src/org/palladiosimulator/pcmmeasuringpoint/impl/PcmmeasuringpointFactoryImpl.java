@@ -87,6 +87,10 @@ public class PcmmeasuringpointFactoryImpl extends EFactoryImpl implements Pcmmea
             return this.createResourceEnvironmentMeasuringPoint();
         case PcmmeasuringpointPackage.RESOURCE_CONTAINER_MEASURING_POINT:
             return this.createResourceContainerMeasuringPoint();
+        case PcmmeasuringpointPackage.ASSEMBLY_ACTION_MEASURING_POINT:
+            return this.createAssemblyActionMeasuringPoint();
+        case PcmmeasuringpointPackage.SYSTEM_MEASURING_POINT:
+            return this.createSystemMeasuringPoint();
         default:
             throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
         }
