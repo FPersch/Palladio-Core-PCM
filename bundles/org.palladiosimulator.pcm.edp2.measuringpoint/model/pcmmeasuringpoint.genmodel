@@ -55,5 +55,14 @@
     <genClasses image="false" ecoreClass="pcmmeasuringpoint.ecore#//ResourceEnvironmentReference">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pcmmeasuringpoint.ecore#//ResourceEnvironmentReference/resourceEnvironment"/>
     </genClasses>
+    <genClasses ecoreClass="pcmmeasuringpoint.ecore#//ResourceContainerMeasuringPoint"/>
+    <genClasses image="false" ecoreClass="pcmmeasuringpoint.ecore#//ResourceContainerReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pcmmeasuringpoint.ecore#//ResourceContainerReference/resourceContainer"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="pcmmeasuringpoint.ecore#//ActionReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference pcmmeasuringpoint.ecore#//ActionReference/action"/>
+    </genClasses>
+    <genClasses ecoreClass="pcmmeasuringpoint.ecore#//AssemblyActionMeasuringPoint"/>
+    <genClasses ecoreClass="pcmmeasuringpoint.ecore#//SystemMeasuringPoint"/>
   </genPackages>
 </genmodel:GenModel>

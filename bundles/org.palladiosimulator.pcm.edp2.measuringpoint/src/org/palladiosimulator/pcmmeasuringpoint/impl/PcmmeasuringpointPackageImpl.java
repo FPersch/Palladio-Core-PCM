@@ -17,8 +17,10 @@ import org.palladiosimulator.pcm.seff.SeffPackage;
 import org.palladiosimulator.pcm.subsystem.SubsystemPackage;
 import org.palladiosimulator.pcm.system.SystemPackage;
 import org.palladiosimulator.pcm.usagemodel.UsagemodelPackage;
+import org.palladiosimulator.pcmmeasuringpoint.ActionReference;
 import org.palladiosimulator.pcmmeasuringpoint.ActiveResourceMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.ActiveResourceReference;
+import org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyPassiveResourceMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyReference;
@@ -38,6 +40,7 @@ import org.palladiosimulator.pcmmeasuringpoint.ResourceEnvironmentMeasuringPoint
 import org.palladiosimulator.pcmmeasuringpoint.ResourceEnvironmentReference;
 import org.palladiosimulator.pcmmeasuringpoint.SubSystemOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SubSystemReference;
+import org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SystemOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SystemReference;
 import org.palladiosimulator.pcmmeasuringpoint.UsageScenarioMeasuringPoint;
@@ -210,6 +213,24 @@ public class PcmmeasuringpointPackageImpl extends EPackageImpl implements Pcmmea
      * @generated
      */
     private EClass resourceContainerReferenceEClass = null;
+    
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass actionReferenceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass assemblyActionMeasuringPointEClass = null;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass systemMeasuringPointEClass = null;
 
     /**
      * Creates an instance of the model <b>Package</b>, registered with
@@ -653,6 +674,42 @@ public class PcmmeasuringpointPackageImpl extends EPackageImpl implements Pcmmea
     }
 
     /**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getActionReference() {
+		return this.actionReferenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getActionReference_Action() {
+		return (EReference) this.actionReferenceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAssemblyActionMeasuringPoint() {
+		return this.assemblyActionMeasuringPointEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getSystemMeasuringPoint() {
+		return this.systemMeasuringPointEClass;
+	}
+    
+    /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -743,6 +800,13 @@ public class PcmmeasuringpointPackageImpl extends EPackageImpl implements Pcmmea
 
         this.resourceContainerReferenceEClass = this.createEClass(RESOURCE_CONTAINER_REFERENCE);
         this.createEReference(this.resourceContainerReferenceEClass, RESOURCE_CONTAINER_REFERENCE__RESOURCE_CONTAINER);
+        
+        this.actionReferenceEClass = this.createEClass(ACTION_REFERENCE);
+        this.createEReference(this.actionReferenceEClass, ACTION_REFERENCE__ACTION);
+
+		this.assemblyActionMeasuringPointEClass = this.createEClass(ASSEMBLY_ACTION_MEASURING_POINT);
+
+		this.systemMeasuringPointEClass = this.createEClass(SYSTEM_MEASURING_POINT);
     }
 
     /**
@@ -819,7 +883,12 @@ public class PcmmeasuringpointPackageImpl extends EPackageImpl implements Pcmmea
         this.resourceEnvironmentMeasuringPointEClass.getESuperTypes().add(this.getResourceEnvironmentReference());
         this.resourceContainerMeasuringPointEClass.getESuperTypes().add(theMeasuringpointPackage.getMeasuringPoint());
         this.resourceContainerMeasuringPointEClass.getESuperTypes().add(this.getResourceContainerReference());
-
+        this.assemblyActionMeasuringPointEClass.getESuperTypes().add(theMeasuringpointPackage.getMeasuringPoint());
+        this.assemblyActionMeasuringPointEClass.getESuperTypes().add(this.getAssemblyReference());
+        this.assemblyActionMeasuringPointEClass.getESuperTypes().add(this.getActionReference());
+        this.systemMeasuringPointEClass.getESuperTypes().add(theMeasuringpointPackage.getMeasuringPoint());
+        this.systemMeasuringPointEClass.getESuperTypes().add(this.getSystemReference());
+        
         // Initialize classes and features; add operations and parameters
         this.initEClass(this.assemblyOperationMeasuringPointEClass, AssemblyOperationMeasuringPoint.class,
                 "AssemblyOperationMeasuringPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -938,6 +1007,18 @@ public class PcmmeasuringpointPackageImpl extends EPackageImpl implements Pcmmea
                 theResourceenvironmentPackage.getResourceContainer(), null, "resourceContainer", null, 1, 1,
                 ResourceContainerReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
                 IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		this.initEClass(this.actionReferenceEClass, ActionReference.class, "ActionReference", IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		this.initEReference(this.getActionReference_Action(), theSeffPackage.getAbstractAction(), null, "action", null, 1, 1,
+				ActionReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		this.initEClass(this.assemblyActionMeasuringPointEClass, AssemblyActionMeasuringPoint.class,
+				"AssemblyActionMeasuringPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		this.initEClass(this.systemMeasuringPointEClass, SystemMeasuringPoint.class, "SystemMeasuringPoint", !IS_ABSTRACT,
+				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         // Create resource
         this.createResource(eNS_URI);

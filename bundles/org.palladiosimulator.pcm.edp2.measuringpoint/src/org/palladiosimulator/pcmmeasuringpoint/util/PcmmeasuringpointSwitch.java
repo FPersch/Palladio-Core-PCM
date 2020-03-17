@@ -6,8 +6,10 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
 import org.palladiosimulator.edp2.models.measuringpoint.MeasuringPoint;
+import org.palladiosimulator.pcmmeasuringpoint.ActionReference;
 import org.palladiosimulator.pcmmeasuringpoint.ActiveResourceMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.ActiveResourceReference;
+import org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyPassiveResourceMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyReference;
@@ -26,6 +28,7 @@ import org.palladiosimulator.pcmmeasuringpoint.ResourceEnvironmentMeasuringPoint
 import org.palladiosimulator.pcmmeasuringpoint.ResourceEnvironmentReference;
 import org.palladiosimulator.pcmmeasuringpoint.SubSystemOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SubSystemReference;
+import org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SystemOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SystemReference;
 import org.palladiosimulator.pcmmeasuringpoint.UsageScenarioMeasuringPoint;
@@ -346,6 +349,37 @@ public class PcmmeasuringpointSwitch<T> extends Switch<T> {
             }
             return result;
         }
+        case PcmmeasuringpointPackage.ACTION_REFERENCE: {
+			ActionReference actionReference = (ActionReference) theEObject;
+			T result = caseActionReference(actionReference);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case PcmmeasuringpointPackage.ASSEMBLY_ACTION_MEASURING_POINT: {
+			AssemblyActionMeasuringPoint assemblyActionMeasuringPoint = (AssemblyActionMeasuringPoint) theEObject;
+			T result = caseAssemblyActionMeasuringPoint(assemblyActionMeasuringPoint);
+			if (result == null)
+				result = caseMeasuringPoint(assemblyActionMeasuringPoint);
+			if (result == null)
+				result = caseAssemblyReference(assemblyActionMeasuringPoint);
+			if (result == null)
+				result = caseActionReference(assemblyActionMeasuringPoint);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case PcmmeasuringpointPackage.SYSTEM_MEASURING_POINT: {
+			SystemMeasuringPoint systemMeasuringPoint = (SystemMeasuringPoint) theEObject;
+			T result = caseSystemMeasuringPoint(systemMeasuringPoint);
+			if (result == null)
+				result = caseMeasuringPoint(systemMeasuringPoint);
+			if (result == null)
+				result = caseSystemReference(systemMeasuringPoint);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
         default:
             return this.defaultCase(theEObject);
         }
@@ -720,6 +754,51 @@ public class PcmmeasuringpointSwitch<T> extends Switch<T> {
         return null;
     }
 
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Action Reference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Action Reference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseActionReference(ActionReference object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Assembly Action Measuring Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Assembly Action Measuring Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAssemblyActionMeasuringPoint(AssemblyActionMeasuringPoint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>System Measuring Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>System Measuring Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSystemMeasuringPoint(SystemMeasuringPoint object) {
+		return null;
+	}
+    
     /**
      * Returns the result of interpreting the object as an instance of '<em>Measuring Point</em>'.
      * <!-- begin-user-doc --> This implementation returns null; returning a non-null result will

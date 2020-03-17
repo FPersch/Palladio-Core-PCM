@@ -120,6 +120,24 @@ public interface PcmmeasuringpointFactory extends EFactory {
      */
     ResourceContainerMeasuringPoint createResourceContainerMeasuringPoint();
 
+	/**
+	 * Returns a new object of class '<em>Assembly Action Measuring Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assembly Action Measuring Point</em>'.
+	 * @generated
+	 */
+	AssemblyActionMeasuringPoint createAssemblyActionMeasuringPoint();
+
+	/**
+	 * Returns a new object of class '<em>System Measuring Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>System Measuring Point</em>'.
+	 * @generated
+	 */
+	SystemMeasuringPoint createSystemMeasuringPoint();
+    
     /**
      * Returns the package supported by this factory. <!-- begin-user-doc --> <!-- end-user-doc -->
      *

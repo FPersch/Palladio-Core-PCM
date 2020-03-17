@@ -1123,6 +1123,154 @@ public interface PcmmeasuringpointPackage extends EPackage {
      */
     int RESOURCE_CONTAINER_REFERENCE_FEATURE_COUNT = 1;
 
+	/**
+	 * The meta object id for the '{@link org.palladiosimulator.pcmmeasuringpoint.impl.ActionReferenceImpl <em>Action Reference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.palladiosimulator.pcmmeasuringpoint.impl.ActionReferenceImpl
+	 * @see org.palladiosimulator.pcmmeasuringpoint.impl.PcmmeasuringpointPackageImpl#getActionReference()
+	 * @generated
+	 */
+	int ACTION_REFERENCE = 23;
+
+	/**
+	 * The feature id for the '<em><b>Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_REFERENCE__ACTION = 0;
+
+	/**
+	 * The number of structural features of the '<em>Action Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACTION_REFERENCE_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link org.palladiosimulator.pcmmeasuringpoint.impl.AssemblyActionMeasuringPointImpl <em>Assembly Action Measuring Point</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.palladiosimulator.pcmmeasuringpoint.impl.AssemblyActionMeasuringPointImpl
+	 * @see org.palladiosimulator.pcmmeasuringpoint.impl.PcmmeasuringpointPackageImpl#getAssemblyActionMeasuringPoint()
+	 * @generated
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT = 24;
+
+	/**
+	 * The feature id for the '<em><b>Measuring Point Repository</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT__MEASURING_POINT_REPOSITORY = MeasuringpointPackage.MEASURING_POINT__MEASURING_POINT_REPOSITORY;
+
+	/**
+	 * The feature id for the '<em><b>String Representation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT__STRING_REPRESENTATION = MeasuringpointPackage.MEASURING_POINT__STRING_REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Resource URI Representation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT__RESOURCE_URI_REPRESENTATION = MeasuringpointPackage.MEASURING_POINT__RESOURCE_URI_REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Assembly</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT__ASSEMBLY = MeasuringpointPackage.MEASURING_POINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Action</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT__ACTION = MeasuringpointPackage.MEASURING_POINT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Assembly Action Measuring Point</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ASSEMBLY_ACTION_MEASURING_POINT_FEATURE_COUNT = MeasuringpointPackage.MEASURING_POINT_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link org.palladiosimulator.pcmmeasuringpoint.impl.SystemMeasuringPointImpl <em>System Measuring Point</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.palladiosimulator.pcmmeasuringpoint.impl.SystemMeasuringPointImpl
+	 * @see org.palladiosimulator.pcmmeasuringpoint.impl.PcmmeasuringpointPackageImpl#getSystemMeasuringPoint()
+	 * @generated
+	 */
+	int SYSTEM_MEASURING_POINT = 25;
+
+	/**
+	 * The feature id for the '<em><b>Measuring Point Repository</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_MEASURING_POINT__MEASURING_POINT_REPOSITORY = MeasuringpointPackage.MEASURING_POINT__MEASURING_POINT_REPOSITORY;
+
+	/**
+	 * The feature id for the '<em><b>String Representation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_MEASURING_POINT__STRING_REPRESENTATION = MeasuringpointPackage.MEASURING_POINT__STRING_REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Resource URI Representation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_MEASURING_POINT__RESOURCE_URI_REPRESENTATION = MeasuringpointPackage.MEASURING_POINT__RESOURCE_URI_REPRESENTATION;
+
+	/**
+	 * The feature id for the '<em><b>System</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_MEASURING_POINT__SYSTEM = MeasuringpointPackage.MEASURING_POINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>System Measuring Point</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_MEASURING_POINT_FEATURE_COUNT = MeasuringpointPackage.MEASURING_POINT_FEATURE_COUNT + 1;
+
+    
     /**
      * Returns the meta object for class '
      * {@link org.palladiosimulator.pcmmeasuringpoint.AssemblyOperationMeasuringPoint
@@ -1549,6 +1697,48 @@ public interface PcmmeasuringpointPackage extends EPackage {
      */
     EReference getResourceContainerReference_ResourceContainer();
 
+	/**
+	 * Returns the meta object for class '{@link org.palladiosimulator.pcmmeasuringpoint.ActionReference <em>Action Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Action Reference</em>'.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.ActionReference
+	 * @generated
+	 */
+	EClass getActionReference();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.palladiosimulator.pcmmeasuringpoint.ActionReference#getAction <em>Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Action</em>'.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.ActionReference#getAction()
+	 * @see #getActionReference()
+	 * @generated
+	 */
+	EReference getActionReference_Action();
+
+	/**
+	 * Returns the meta object for class '{@link org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint <em>Assembly Action Measuring Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assembly Action Measuring Point</em>'.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint
+	 * @generated
+	 */
+	EClass getAssemblyActionMeasuringPoint();
+
+	/**
+	 * Returns the meta object for class '{@link org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint <em>System Measuring Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>System Measuring Point</em>'.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint
+	 * @generated
+	 */
+	EClass getSystemMeasuringPoint();
+
+    
     /**
      * Returns the factory that creates the instances of the model. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -1960,6 +2150,50 @@ public interface PcmmeasuringpointPackage extends EPackage {
          */
         EReference RESOURCE_CONTAINER_REFERENCE__RESOURCE_CONTAINER = eINSTANCE
                 .getResourceContainerReference_ResourceContainer();
+        
+        /**
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.pcmmeasuringpoint.impl.ActionReferenceImpl
+         * <em>Action Reference</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc
+         * -->
+         *
+         * @see org.palladiosimulator.pcmmeasuringpoint.impl.ActionReferenceImpl
+         * @see org.palladiosimulator.pcmmeasuringpoint.impl.PcmmeasuringpointPackageImpl#getActionReference()
+         * @generated
+         */
+        EClass ACTION_REFERENCE = eINSTANCE.getActionReference();
+        
+        /**
+         * The meta object literal for the '<em><b>Action</b></em>' reference feature.
+         * <!-- begin-user-doc --> <!-- end-user-doc -->
+         *
+         * @generated
+         */
+        EReference ACTION_REFERENCE__ACTION = eINSTANCE.getActionReference_Action();
+        
+        /**
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.pcmmeasuringpoint.impl.AssemblyActionMeasuringPointImpl
+         * <em>Assembly Action Measuring Point</em>}' class. <!-- begin-user-doc --> <!--
+         * end-user-doc -->
+         *
+         * @see org.palladiosimulator.pcmmeasuringpoint.impl.AssemblyActionMeasuringPointImpl
+         * @see org.palladiosimulator.pcmmeasuringpoint.impl.PcmmeasuringpointPackageImpl#getAssemblyActionMeasuringPoint()
+         * @generated
+         */
+        EClass ASSEMBLY_ACTION_MEASURING_POINT = eINSTANCE.getAssemblyActionMeasuringPoint();
+        
+        /**
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.pcmmeasuringpoint.impl.SystemMeasuringPointImpl
+         * <em>System Measuring Point</em>}' class. <!-- begin-user-doc --> <!--
+         * end-user-doc -->
+         *
+         * @see org.palladiosimulator.pcmmeasuringpoint.impl.SystemMeasuringPointImpl
+         * @see org.palladiosimulator.pcmmeasuringpoint.impl.PcmmeasuringpointPackageImpl#getSystemMeasuringPoint()
+         * @generated
+         */
+        EClass SYSTEM_MEASURING_POINT = eINSTANCE.getSystemMeasuringPoint();
 
     }
 

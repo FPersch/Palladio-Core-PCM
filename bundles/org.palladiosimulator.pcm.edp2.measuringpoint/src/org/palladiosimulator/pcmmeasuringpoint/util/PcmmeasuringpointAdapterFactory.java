@@ -571,6 +571,48 @@ public class PcmmeasuringpointAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
+	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.pcmmeasuringpoint.ActionReference <em>Action Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.ActionReference
+	 * @generated
+	 */
+	public Adapter createActionReferenceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint <em>Assembly Action Measuring Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint
+	 * @generated
+	 */
+	public Adapter createAssemblyActionMeasuringPointAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint <em>System Measuring Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint
+	 * @generated
+	 */
+	public Adapter createSystemMeasuringPointAdapter() {
+		return null;
+	}
+    
+    /**
      * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.edp2.models.measuringpoint.MeasuringPoint
      * <em>Measuring Point</em>}'. <!-- begin-user-doc --> This default implementation returns null

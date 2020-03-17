@@ -8,6 +8,7 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.palladiosimulator.pcmmeasuringpoint.ActiveResourceMeasuringPoint;
+import org.palladiosimulator.pcmmeasuringpoint.AssemblyActionMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.AssemblyPassiveResourceMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.EntryLevelSystemCallMeasuringPoint;
@@ -18,6 +19,7 @@ import org.palladiosimulator.pcmmeasuringpoint.PcmmeasuringpointPackage;
 import org.palladiosimulator.pcmmeasuringpoint.ResourceContainerMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.ResourceEnvironmentMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SubSystemOperationMeasuringPoint;
+import org.palladiosimulator.pcmmeasuringpoint.SystemMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.SystemOperationMeasuringPoint;
 import org.palladiosimulator.pcmmeasuringpoint.UsageScenarioMeasuringPoint;
 
@@ -211,6 +213,29 @@ public class PcmmeasuringpointFactoryImpl extends EFactoryImpl implements Pcmmea
         return resourceContainerMeasuringPoint;
     }
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AssemblyActionMeasuringPoint createAssemblyActionMeasuringPoint() {
+		AssemblyActionMeasuringPointImpl assemblyActionMeasuringPoint = new AssemblyActionMeasuringPointImpl();
+		return assemblyActionMeasuringPoint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SystemMeasuringPoint createSystemMeasuringPoint() {
+		SystemMeasuringPointImpl systemMeasuringPoint = new SystemMeasuringPointImpl();
+		return systemMeasuringPoint;
+	}
+
+    
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
